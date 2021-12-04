@@ -31,9 +31,6 @@ str solve(vs binaries, int pos, std::function<char(const int&, const int&)> crit
             newBins.push_back(i);
         }
     }
-    for (const auto& i : newBins) {
-        std::cout << i << std::endl;
-    }
     std::cout << "\n\n";
     return solve(newBins, pos + 1, criteria);
 }
